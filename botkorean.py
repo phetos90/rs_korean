@@ -2,7 +2,6 @@ import discord
 import os
 import configparser
 
-
 client = discord.Client()
 
 
