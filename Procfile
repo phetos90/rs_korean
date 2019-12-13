@@ -1,1 +1,1 @@
-worker: botkorean.py
+worker: python botkorean.py
