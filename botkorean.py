@@ -37,6 +37,9 @@ async def on_message(message):
     rosbot = setting["로스봇"]["상태"]
     if message.content.startswith("로스봇"):
         await message.channel.send(rosbot)
+    
+    if message.content.startswith(""):
+        await message.channel.send(rosbot)
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
