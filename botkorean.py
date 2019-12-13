@@ -1,6 +1,6 @@
 import discord
-import configparser
 import os
+import configparser
 
 
 client = discord.Client()
@@ -9,7 +9,7 @@ client = discord.Client()
 @client.event
 async def on_ready():
     a = configparser.ConfigParser()
-    a.read("설정.ini")
+    a.read("krsetting.ini")
     status = a["설정"]["상태"]
     print(client.user.id)
     print("ready")
